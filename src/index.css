@@ -1,6 +1,10 @@
 #root {
- 
   max-width: 1600px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
