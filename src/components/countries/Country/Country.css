@@ -4,3 +4,9 @@
     padding: 20px;
     border-radius: 8px;
 }
+.country-visit{
+    border: 5px solid green;
+}
+.country-not-visit{
+    border: 5px solid red;
+}
