@@ -5,8 +5,11 @@ const Countries = ({countriesPromise}) => {
     const [visitedCountries, setVisitedCountries]=useState([]);
     const [visitedFlag, setVisitedFlag]=useState([]);
     const handleVisitedCountries=(country)=>{
-       const newVisitedCountries=[...visitedCountries,country];
+        const exist = visitedCountries.find(c=> c.ccn3.ccn3 ===country.ccn3.ccn3)
+      if(!exist){
+         const newVisitedCountries=[...visitedCountries,country];
        setVisitedCountries(newVisitedCountries)
+      }
     }
     const handleVisitedFlags=(flag)=>{
       const newVisitedFlag=[...visitedFlag,flag];
